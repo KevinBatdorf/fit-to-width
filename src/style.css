@@ -1,0 +1,71 @@
+.ftw-fit-to-width {
+	display: flex;
+	container-type: inline-size;
+
+	--ftw-captured-length: initial;
+	--ftw-support-sentinel: var(--ftw-captured-length, 9999px);
+
+	& > .ftw-invisible {
+		visibility: hidden;
+	}
+
+	&:not(.ftw-fit-to-width *) {
+		line-height: var(--ftw-line-height, 1.1);
+		margin: var(--ftw-margin, 0.1em 0);
+	}
+
+	& > :not(.ftw-invisible) {
+		flex-grow: 1;
+		container-type: inline-size;
+
+		--ftw-captured-length: 100cqi;
+		--ftw-available-space: var(--ftw-captured-length);
+
+		& > * {
+			--ftw-support-sentinel: inherit;
+			--ftw-captured-length: 100cqi;
+			--ftw-ratio: tan(
+				atan2(
+					var(--ftw-available-space),
+					var(--ftw-available-space) -
+					var(--ftw-captured-length)
+				)
+			);
+			--ftw-font-size: clamp(
+				1em,
+				1em *
+				var(--ftw-ratio),
+				var(--ftw-max-font-size, infinity * 1px) -
+				var(--ftw-support-sentinel)
+			);
+			inline-size: var(--ftw-available-space);
+
+			&:not(.ftw-fit-to-width) {
+				display: block;
+				font-size: var(--ftw-font-size);
+
+				@container (inline-size > 0) {
+					white-space: nowrap;
+				}
+			}
+
+			&.ftw-fit-to-width {
+				--ftw-captured-length2: var(--ftw-font-size);
+				font-variation-settings: "opsz"
+					tan(atan2(var(--ftw-captured-length2), 1px));
+			}
+		}
+	}
+}
+
+@property --ftw-captured-length {
+	syntax: "<length>";
+	initial-value: 0px;
+	inherits: true;
+}
+
+@property --ftw-captured-length2 {
+	syntax: "<length>";
+	initial-value: 0px;
+	inherits: true;
+}

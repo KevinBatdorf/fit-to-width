@@ -1,0 +1,7 @@
+{
+	"name": "kevinbatdorf/fit-to-width-text",
+	"require": {},
+	"require-dev": {
+		"johnpbloch/wordpress-core": "*"
+	}
+}
