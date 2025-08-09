@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "kevinbatdorf/fit-to-width",
 	"version": "0.1.0",
-	"title": "Fit To Width Text",
+	"title": "Fit To Width",
 	"category": "widgets",
 	"icon": "menu",
 	"description": "A text block where each line is automatically full width.",

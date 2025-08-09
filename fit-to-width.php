@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name:       Fit To Width Text
+ * Plugin Name:       Fit To Width
  * Description:       A text block where each line is automatically full width.
  * Version:           0.1.0
- * Requires at least: 6.7
+ * Requires at least: 6.8
  * Requires PHP:      7.4
  * Author:            Kevin Batdorf
  * License:           GPL-2.0-or-later
