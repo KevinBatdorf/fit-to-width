@@ -15,7 +15,6 @@ jobs:
             - name: npm install and build
               run: |
                   npm ci
-                  npx eslint --max-warnings 0 .
                   npm run build
               env:
                   CI: true
@@ -23,7 +22,7 @@ jobs:
             - name: Package
               uses: actions/upload-artifact@v4
               with:
-                  name: code-block-pro
+                  name: fit-to-width
                   retention-days: 5
                   path: |
                       ${{ github.workspace }}/

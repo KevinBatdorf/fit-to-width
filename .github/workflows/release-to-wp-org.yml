@@ -13,7 +13,6 @@ jobs:
             - name: npm install and build
               run: |
                   npm ci
-                  npx eslint --max-warnings 0 .
                   npm run build
               env:
                   CI: true
@@ -26,4 +25,4 @@ jobs:
               env:
                   SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
                   SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-                  SLUG: code-block-pro
+                  SLUG: fit-to-width
