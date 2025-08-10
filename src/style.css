@@ -1,3 +1,4 @@
+/* Approach taken (with permission) from https://kizu.dev/fit-to-width */
 .ftw-fit-to-width {
 	display: flex;
 	container-type: inline-size;

@@ -26,7 +26,7 @@ See here [https://caniuse.com/mdn-css_at-rules_property](https://caniuse.com/mdn
 
 = How did you do it? =
 
-See here [https://kizu.dev/fit-to-width](https://kizu.dev/fit-to-width)
+For a detailed explanation of how this works, see [https://kizu.dev/fit-to-width](https://kizu.dev/fit-to-width).
 
 = What's that text in the screenshot about? =
 

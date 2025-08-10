@@ -17,7 +17,13 @@
 		"lineHeight": { "type": "string", "default": "1.1" },
 		"maxFontSize": { "type": "string" }
 	},
-	"supports": { "html": false },
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"],
+		"typography": {
+			"fontSize": true
+		}
+	},
 	"textdomain": "fit-to-width",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

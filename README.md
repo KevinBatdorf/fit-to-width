@@ -2,6 +2,8 @@
 
 A WordPress block that automatically adjusts the text to fit the width of its container. CSS only.
 
+For a detailed explanation of how this works, see [https://kizu.dev/fit-to-width](https://kizu.dev/fit-to-width).
+
 ### Features
 
 - No JavaScript
