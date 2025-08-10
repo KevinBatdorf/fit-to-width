@@ -1,5 +1,6 @@
 > [!CAUTION]
 > Currently this block will not meet SC 1.4.4 (Resize Text).
+>
 > I'm currently looking into ways to address this responsibly.
 
 ## Fit to Width
