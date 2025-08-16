@@ -20,10 +20,7 @@
 	},
 	"supports": {
 		"html": false,
-		"align": ["wide", "full"],
-		"typography": {
-			"fontSize": true
-		}
+		"align": ["wide", "full"]
 	},
 	"textdomain": "fit-to-width",
 	"editorScript": "file:./index.js",
