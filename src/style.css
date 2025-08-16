@@ -1,3 +1,7 @@
+.wp-block-kevinbatdorf-fit-to-width {
+	font-size: var(--ftw-base-font-size, 1em);
+}
+
 /* Approach taken (with permission) from https://kizu.dev/fit-to-width */
 .ftw-fit-to-width {
 	display: flex;

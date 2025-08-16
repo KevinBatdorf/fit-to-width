@@ -15,7 +15,8 @@
 		},
 		"margin": { "type": "string" },
 		"lineHeight": { "type": "string", "default": "1.1" },
-		"maxFontSize": { "type": "string" }
+		"maxFontSize": { "type": "string" },
+		"baseFontSize": { "type": "string", "default": "1em" }
 	},
 	"supports": {
 		"html": false,

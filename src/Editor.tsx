@@ -81,6 +81,7 @@ export const Editor = ({ attributes, setAttributes }: Props) => {
 							"--ftw-margin": attributes.margin,
 							"--ftw-line-height": attributes.lineHeight,
 							"--ftw-max-font-size": attributes.maxFontSize,
+							"--ftw-base-font-size": attributes.baseFontSize,
 						},
 					})}
 					role="button"

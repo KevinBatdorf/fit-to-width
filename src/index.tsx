@@ -12,6 +12,7 @@ export type Attributes = {
 	margin?: string;
 	lineHeight?: string;
 	maxFontSize?: string | number;
+	baseFontSize?: string | number;
 };
 
 registerBlockType(metadata as BlockConfiguration<Attributes>, {
@@ -29,6 +30,7 @@ registerBlockType(metadata as BlockConfiguration<Attributes>, {
 						"--ftw-margin": attributes.margin,
 						"--ftw-line-height": attributes.lineHeight,
 						"--ftw-max-font-size": attributes.maxFontSize,
+						"--ftw-base-font-size": attributes.baseFontSize,
 					},
 				})}
 			>
