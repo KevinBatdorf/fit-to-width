@@ -10,6 +10,10 @@ For a detailed explanation of how this works: [Fit-to-Width Text: A New Techniqu
 - No JavaScript
 - Can manually adjust line height
 
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/kevinbatdorf.svg?style=social&label=Follow%20%40kevinbatdorf)](https://twitter.com/kevinbatdorf)
+
+![Fit to Width](https://raw.githubusercontent.com/kevinbatdorf/fit-to-width/main/.wordpress-org/screenshot-1.jpg)
+
 ### FAQ
 
 **Is this accessible?**
@@ -24,7 +28,3 @@ There are arguments that if you maintain a width legible enough then zooming may
 
 More discussion here at [Fit-to-Width
 Discussions & Feedback](https://blog.kizu.dev/fit-to-width-discussions-and-feedback/)
-
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/kevinbatdorf.svg?style=social&label=Follow%20%40kevinbatdorf)](https://twitter.com/kevinbatdorf)
-
-![Fit to Width](https://raw.githubusercontent.com/kevinbatdorf/fit-to-width/main/.wordpress-org/screenshot-1.jpg)
