@@ -1,6 +1,6 @@
 === Fit To Width ===
 Contributors:      kbat82
-Tags:              block, responsive text, typography, creative
+Tags:              block, responsive text, stretch, typography, creative
 Tested up to:      6.8
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
@@ -28,9 +28,15 @@ See here [https://caniuse.com/mdn-css_at-rules_property](https://caniuse.com/mdn
 
 For a detailed explanation of how this works, see [https://kizu.dev/fit-to-width](https://kizu.dev/fit-to-width).
 
-= What's that text in the screenshot about? =
+= Is it accessible? =
 
-See here [https://www.youtube.com/watch?v=KvMY1uzSC1E](https://www.youtube.com/watch?v=KvMY1uzSC1E)
+I guess that depends on a few things. First thing I'll say is that this approach is better than others you will find! And I've yet to find a solution that meets this following criteria:
+
+It won't pass [Success Criterion 1.4.4 Resize Text](https://w3c.github.io/wcag/guidelines/#resize-text) when the zoom is dependent on the viewport when zooming.
+
+I don't want to give my own opinion on this as, although I've read a lot on the topic these past few weeks, I'm no means an expert. There's a good discussion on this GitHub issue: [Feature for making text always fit the width of its parent](https://github.com/w3c/csswg-drafts/issues/2528) that I recommend reading.
+
+My advice, however, is that you make sure that your text is legible on all screen widths. There is a 1em minimum font size set, and I've included controls for setting a max font size as well if you need it.
 
 == Screenshots ==
 
@@ -40,9 +46,3 @@ See here [https://www.youtube.com/watch?v=KvMY1uzSC1E](https://www.youtube.com/w
 
 = 0.1.0 =
 * Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.

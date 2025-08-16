@@ -11,7 +11,7 @@ export type Attributes = {
 	content: string;
 	margin?: string;
 	lineHeight?: string;
-	maxFontSize?: string;
+	maxFontSize?: string | number;
 };
 
 registerBlockType(metadata as BlockConfiguration<Attributes>, {
