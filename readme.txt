@@ -12,7 +12,7 @@ Automatically adjusts the text to fit the width of its container. CSS only.
 
 A simple, lightweight block for displaying each line of text at full width, no matter the length of the text. No JavaScript.
 
-View the project on GitHub: [https://github.com/kevinbatdorf/fit-to-width](https://github.com/kevinbatdorf/fit-to-width)
+Star the project on GitHub: [https://github.com/kevinbatdorf/fit-to-width](https://github.com/kevinbatdorf/fit-to-width)
 
 == Installation ==
 
