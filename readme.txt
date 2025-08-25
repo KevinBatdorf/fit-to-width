@@ -12,15 +12,14 @@ Automatically adjusts the text to fit the width of its container. No JavaScript.
 
 A simple, lightweight block for displaying each line of text at full width, no matter the length of the text. No JavaScript.
 
-Note: if you are installing it for the first time from the Block Inserter, WordPress has a bug where it doesn't load block styles into the iFrame, so you will need to refresh.
-
 Star the project on GitHub: [https://github.com/kevinbatdorf/fit-to-width](https://github.com/kevinbatdorf/fit-to-width)
+
+*Note*: if you are installing it for the first time from the Block Inserter, WordPress has a bug where it doesn't load block styles into the iFrame, so you will need to refresh.
 
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/fit-to-width` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
-
 
 == Frequently Asked Questions ==
 
