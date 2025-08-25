@@ -1,5 +1,9 @@
 import { useBlockProps as blockProps, RichText } from "@wordpress/block-editor";
-import { type BlockConfiguration, registerBlockType } from "@wordpress/blocks";
+import {
+	type BlockConfiguration,
+	createBlock,
+	registerBlockType,
+} from "@wordpress/blocks";
 import metadata from "./block.json" with { type: "json" };
 import "./style.css";
 import { __ } from "@wordpress/i18n";
@@ -37,6 +41,22 @@ registerBlockType(metadata as BlockConfiguration<Attributes>, {
 				<RichText.Content value={makeFitToWidth(attributes.content)} />
 			</div>
 		);
+	},
+	transforms: {
+		from: [
+			{
+				type: "block",
+				blocks: ["core/paragraph"],
+				transform: (attrs) => createBlock(metadata.name, attrs),
+			},
+		],
+		to: [
+			{
+				type: "block",
+				blocks: ["core/paragraph"],
+				transform: (attrs) => createBlock("core/paragraph", attrs),
+			},
+		],
 	},
 	example: {
 		attributes: {
