@@ -1,4 +1,4 @@
-=== Fit To Width ===
+=== Fit To Width - CSS-only responsive text ===
 Contributors:      kbat82
 Tags:              block, responsive text, stretch, typography, creative
 Tested up to:      6.8
@@ -6,13 +6,13 @@ Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically adjusts the text to fit the width of its container. CSS only.
+Automatically adjusts the text to fit the width of its container. No JavaScript.
 
 == Description ==
 
 A simple, lightweight block for displaying each line of text at full width, no matter the length of the text. No JavaScript.
 
-Note: if you are installing it for the first time from the Block Inserter, WordPress has a bug where it doens't load block styles into the iFrame, so you will need to refresh.
+Note: if you are installing it for the first time from the Block Inserter, WordPress has a bug where it doesn't load block styles into the iFrame, so you will need to refresh.
 
 Star the project on GitHub: [https://github.com/kevinbatdorf/fit-to-width](https://github.com/kevinbatdorf/fit-to-width)
 
