@@ -47,4 +47,4 @@ There are arguments that if you maintain a width legible enough then zooming may
 == Changelog ==
 
 = 0.1.0 =
-* Release
+- Initial Release
