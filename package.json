@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@types/wordpress__block-editor": "^11.5.17",
 		"@types/wordpress__blocks": "^12.5.18",
-		"@wordpress/scripts": "^30.21.0",
+		"@wordpress/scripts": "^30.24.0",
 		"typescript": "^5.9.2"
 	},
 	"dependencies": {
