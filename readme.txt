@@ -1,6 +1,6 @@
-=== Fit To Width - CSS-only responsive text ===
+=== Fit To Width - CSS-only stretchy text ===
 Contributors:      kbat82
-Tags:              block, responsive text, stretch, typography, creative
+Tags:              block, responsive text, stretchy, typography, creative
 Tested up to:      6.8
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
