@@ -11,7 +11,7 @@ export const placeCursorAtEnd = (el: HTMLElement) => {
 
 export const makeFitToWidth = (content: string) =>
 	content
-		.split("<br>")
+		.split('<br>')
 		.map(
 			(line) => `
 		  <span class="ftw-fit-to-width">
@@ -19,4 +19,4 @@ export const makeFitToWidth = (content: string) =>
             <span aria-hidden="true" class="ftw-invisible">${line}</span>
           </span>`,
 		)
-		.join("");
+		.join('');
