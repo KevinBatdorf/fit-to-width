@@ -13,3 +13,5 @@
 /biome.json
 /playwright.config.ts
 /tsconfig.json
+/.claude
+/.gitignore
