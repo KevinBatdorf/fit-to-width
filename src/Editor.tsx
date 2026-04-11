@@ -2,14 +2,14 @@ import {
 	store as blockEditorStore,
 	useBlockProps as blockProps,
 	RichText,
-} from "@wordpress/block-editor";
-import { __ } from "@wordpress/i18n";
-import "./style.css";
-import { useSelect } from "@wordpress/data";
-import { useEffect, useRef, useState } from "@wordpress/element";
-import { makeFitToWidth, placeCursorAtEnd } from "./helpers.ts";
-import type { Attributes } from "./index.tsx";
-import { Sidebar } from "./Sidebar.tsx";
+} from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
+import './style.css';
+import { useSelect } from '@wordpress/data';
+import { useEffect, useRef, useState } from '@wordpress/element';
+import { makeFitToWidth, placeCursorAtEnd } from './helpers.ts';
+import type { Attributes } from './index.tsx';
+import { Sidebar } from './Sidebar.tsx';
 
 type Props = {
 	attributes: Attributes;
@@ -20,7 +20,6 @@ export const Editor = ({ attributes, setAttributes }: Props) => {
 	const [showOutline, setShowOutline] = useState(false);
 	const [show, setShow] = useState(!attributes.content);
 	const blockAutoFocus = useRef(true); // Don't focus on load
-	// @ts-ignore no type on this
 	const { getSelectedBlockClientId } = useSelect(
 		(select) => select(blockEditorStore),
 		[],
@@ -64,35 +63,35 @@ export const Editor = ({ attributes, setAttributes }: Props) => {
 						});
 					}}
 					style={{
-						display: show ? "block" : "none",
+						display: show ? 'block' : 'none',
 						boxShadow: showOutline
-							? "0 0 0 5px var(--wp--preset--color--base, #ffffff), 0 0 0px 6px #1E1E1E"
+							? '0 0 0 5px var(--wp--preset--color--base, #ffffff), 0 0 0px 6px #1E1E1E'
 							: undefined,
 					}}
 					value={attributes.content}
-					placeholder={__("Enter some text...", "fit-to-width")}
+					placeholder={__('Enter some text...', 'fit-to-width')}
 					onChange={(content) => setAttributes({ content })}
 				/>
 				{/* biome-ignore lint/a11y/useSemanticElements: we're inside the editor with unknown button style specificity */}
 				<div
 					{...blockProps({
 						style: {
-							cursor: show ? "default" : "text",
-							"--ftw-margin": attributes.margin,
-							"--ftw-line-height": attributes.lineHeight,
-							"--ftw-max-font-size": attributes.maxFontSize,
-							"--ftw-base-font-size": attributes.baseFontSize,
+							cursor: show ? 'default' : 'text',
+							'--ftw-margin': attributes.margin,
+							'--ftw-line-height': attributes.lineHeight,
+							'--ftw-max-font-size': attributes.maxFontSize,
+							'--ftw-base-font-size': attributes.baseFontSize,
 						},
 					})}
 					role="button"
 					tabIndex={0}
 					onClick={handleShowEditor}
 					onKeyDown={(event) => {
-						if (event.key !== "Enter") return;
+						if (event.key !== 'Enter') return;
 						handleShowEditor();
 					}}
 				>
-					<RichText.Content value={makeFitToWidth(attributes.content || "")} />
+					<RichText.Content value={makeFitToWidth(attributes.content || '')} />
 				</div>
 			</div>
 		</>

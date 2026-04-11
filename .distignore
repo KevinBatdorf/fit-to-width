@@ -1,7 +1,17 @@
 /.wordpress-org
 /.git
 /.github
+/.vscode
 /node_modules
+/scripts
+/tests
+/test-results
+/playwright-report
 /package-lock.json
 /composer.lock
 /vendor
+/biome.json
+/playwright.config.ts
+/tsconfig.json
+/.claude
+/.gitignore
