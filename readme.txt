@@ -2,7 +2,7 @@
 Contributors:      kbat82
 Tags:              block, responsive text, stretchy, typography, creative
 Tested up to:      7.0
-Stable tag:        0.1.0
+Stable tag:        0.2.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,11 @@ There are arguments that if you maintain a width legible enough then zooming may
 1. An example of the text next to a cool dog
 
 == Changelog ==
+
+= 0.2.0 - 2026-04-12 =
+- Modernize tooling: Biome, Playwright + WP Playground, updated deps.
+- Update CI workflows to use node lts/*.
+- Tested up to WordPress 7.0.
 
 = 0.1.0 =
 - Initial Release
