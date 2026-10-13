@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.9",
-		"@playwright/test": "^1.58.2",
+		"@playwright/test": "^1.59.1",
 		"@types/wordpress__block-editor": "^15.0.5",
 		"@types/wordpress__blocks": "^15.10.2",
 		"@wordpress/e2e-test-utils-playwright": "^1.42.0",
