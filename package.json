@@ -18,21 +18,20 @@
 		"test:e2e": "node scripts/run-e2e.mjs"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.9",
-		"@playwright/test": "^1.58.2",
-		"@types/wordpress__block-editor": "^15.0.5",
-		"@types/wordpress__blocks": "^15.10.2",
-		"@wordpress/e2e-test-utils-playwright": "^1.42.0",
-		"@wordpress/scripts": "^31.7.0",
-		"@wp-playground/cli": "^3.1.13",
-		"typescript": "^6.0.2"
+		"@biomejs/biome": "^2.5.6",
+		"@playwright/test": "^1.62.1",
+		"@types/wordpress__block-editor": "^15.0.6",
+		"@wordpress/e2e-test-utils-playwright": "^1.52.0",
+		"@wordpress/scripts": "^34.0.0",
+		"@wp-playground/cli": "^3.1.48",
+		"typescript": "^7.0.2"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^15.15.0",
-		"@wordpress/blocks": "^15.15.0",
-		"@wordpress/components": "^32.4.0",
-		"@wordpress/data": "^10.42.0",
-		"@wordpress/element": "^6.42.0",
-		"@wordpress/i18n": "^6.15.0"
+		"@wordpress/block-editor": "^16.1.0",
+		"@wordpress/blocks": "^15.25.0",
+		"@wordpress/components": "^38.0.0",
+		"@wordpress/data": "^10.52.0",
+		"@wordpress/element": "^8.4.0",
+		"@wordpress/i18n": "^6.25.0"
 	}
 }

@@ -1,6 +1,7 @@
 import { useBlockProps as blockProps, RichText } from '@wordpress/block-editor';
 import {
 	type BlockConfiguration,
+	type BlockType,
 	createBlock,
 	registerBlockType,
 } from '@wordpress/blocks';
@@ -19,53 +20,59 @@ export type Attributes = {
 	baseFontSize?: string | number;
 };
 
-registerBlockType(metadata as BlockConfiguration<Attributes>, {
-	icon,
-	category: 'text',
-	edit: ({ attributes, setAttributes }) => (
-		<Editor attributes={attributes} setAttributes={setAttributes} />
-	),
-	save: ({ attributes }) => {
-		if (!attributes.content) return null;
-		return (
-			<div
-				{...blockProps.save({
-					style: {
-						'--ftw-margin': attributes.margin,
-						'--ftw-line-height': attributes.lineHeight,
-						'--ftw-max-font-size': attributes.maxFontSize,
-						'--ftw-base-font-size': attributes.baseFontSize,
-					},
-				})}
-			>
-				<RichText.Content value={makeFitToWidth(attributes.content)} />
-			</div>
-		);
-	},
-	transforms: {
-		from: [
-			{
-				type: 'block',
-				blocks: ['core/paragraph'],
-				transform: (attrs) => createBlock(metadata.name, attrs),
-			},
-		],
-		to: [
-			{
-				type: 'block',
-				blocks: ['core/paragraph'],
-				transform: (attrs) => createBlock('core/paragraph', attrs),
-			},
-		],
-	},
-	example: {
-		attributes: {
-			lineHeight: '1.2',
-			// translators: Line breaks are language specific. Check the block preview in the editor.
-			content: __(
-				"So, get away<br>Another way to feel what you didn't <br>want yourself to know<br>And let yourself go<br>You know you didn't lose your self-control<br>Let's start at the rainbow<br>Turn away<br>Another way to be <br>where you didn't want yourself to go<br>Let yourself go<br>Is that a compromise",
-				'fit-to-width',
-			),
+registerBlockType<Attributes>(
+	metadata as unknown as BlockConfiguration<Attributes>,
+	{
+		icon,
+		category: 'text',
+		edit: ({ attributes, setAttributes }) => (
+			<Editor attributes={attributes} setAttributes={setAttributes} />
+		),
+		save: ({ attributes }) => {
+			if (!attributes.content) return null;
+			return (
+				<div
+					{...blockProps.save({
+						style: {
+							'--ftw-margin': attributes.margin,
+							'--ftw-line-height': attributes.lineHeight,
+							'--ftw-max-font-size': attributes.maxFontSize,
+							'--ftw-base-font-size': attributes.baseFontSize,
+						},
+					})}
+				>
+					<RichText.Content value={makeFitToWidth(attributes.content)} />
+				</div>
+			);
+		},
+		transforms: {
+			from: [
+				{
+					type: 'block',
+					blocks: ['core/paragraph'],
+					transform: (attrs) =>
+						createBlock(metadata.name, attrs as Record<string, unknown>),
+				},
+			],
+			to: [
+				{
+					type: 'block',
+					blocks: ['core/paragraph'],
+					transform: (attrs) =>
+						createBlock('core/paragraph', attrs as Record<string, unknown>),
+				},
+			],
+		},
+		example: {
+			// Upstream types example.attributes as the attribute schema, not values
+			attributes: {
+				lineHeight: '1.2',
+				// translators: Line breaks are language specific. Check the block preview in the editor.
+				content: __(
+					"So, get away<br>Another way to feel what you didn't <br>want yourself to know<br>And let yourself go<br>You know you didn't lose your self-control<br>Let's start at the rainbow<br>Turn away<br>Another way to be <br>where you didn't want yourself to go<br>Let yourself go<br>Is that a compromise",
+					'fit-to-width',
+				),
+			} as unknown as BlockType['attributes'],
 		},
 	},
-});
+);
