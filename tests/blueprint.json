@@ -7,6 +7,10 @@
 			"consts": { "WP_DEBUG": true }
 		},
 		{
+			"step": "activateTheme",
+			"themeFolderName": "twentytwentyfive"
+		},
+		{
 			"step": "activatePlugin",
 			"pluginPath": "fit-to-width/fit-to-width.php"
 		},
